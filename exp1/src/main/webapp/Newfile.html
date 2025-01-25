@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+
+    <style>
+        :root {
+            --color-light-gray: #b2bdbd;
+            --color-bg: #2d2d39;
+        }
+
+        body{
+            color: var(--color-light-gray);
+            background-color: var(--color-bg);
+            line-height: 1.6;
+            font-weight: 400;
+            font-size: 1.5rem;
+            min-height: 100vh;
+        }
+
+        .login-form-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 490px;
+        height: 300PX;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        margin: auto;
+        background: #51546e;
+        border-radius: 5px;
+        box-shadow: 0 8px 16px  black;
+    }
+
+    .form-label {
+        float: left;
+        margin-left: 12px;
+        margin-top: 22px;
+        color:#e5e5e5;
+        font-size: 20px;
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+
+    .label1 {
+        padding-top: 10px !important;
+        display: block;
+        border-radius: 5px;
+        color: #e5e5e5;
+        font-size: 20px;
+    }
+
+    .int {
+        margin-left: 50%;
+        transform: translate(-50%);
+        width: 120px;
+        height: 37px;
+        border: none;
+        outline: none;
+        background:#3f4156;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: #e5e5e5;
+        border-radius: 3px;
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .int:hover {
+        background: #2d2d39;
+        transition: .5s;
+    }
+
+    .user-int {
+        border: 1px solid #757575;
+        margin-top: 8px;
+        border-radius: 5px;
+        padding: 10px;
+        width: 90%;
+        background:#b2bdbd;
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="login-form-container">
+        <form method="get" action="register" class="form-container">
+            <label class="label1">First Name</label>
+            <input type="text" name="first_name" class="user-int" placeholder="Enter First Name" />
+            <label class="label1">Last Name</label>
+            <input type="text" name="last_name" class="user-int" placeholder="Enter Last Name" />
+            <input type="submit" value="register" class="int"/>
+        </form> 
+    </div>
+</body>
+
+</html>
+
