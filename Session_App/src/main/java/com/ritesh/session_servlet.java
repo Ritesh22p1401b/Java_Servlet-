@@ -50,12 +50,13 @@ public class session_servlet extends HttpServlet {
 	        out.println("<p>Last Accessed Time: " + lastAccessedTimeFormatted + "</p>");
 	        out.println("<p>New session created: " + (session.isNew() ? "Yes" : "No") + "</p>");
 	        out.println("</body></html>");
+	        
 
 	        out.close();
 	    }
 
 
-	
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 	}

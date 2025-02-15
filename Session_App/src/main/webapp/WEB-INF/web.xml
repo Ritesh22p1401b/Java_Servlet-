@@ -6,13 +6,24 @@
  <servlet-class>com.ritesh.session_servlet</servlet-class>
  </servlet>
  
- 
  <servlet-mapping>
  <servlet-name>session</servlet-name>
  <url-pattern></url-pattern>
  </servlet-mapping>
  
+ <servlet>
+ <servlet-name>abc</servlet-name>
+ <servlet-class>session_timeout</servlet-class>
+ </servlet>
  
+ <session-config>
+    <session-timeout>2</session-timeout>  <!-- Session expires after 5 minutes -->
+</session-config>
  
+ <servlet-mapping>
+ <servlet-name>abc</servlet-name>
+ <url-pattern></url-pattern>
+ </servlet-mapping>
  
 </web-app>
+
