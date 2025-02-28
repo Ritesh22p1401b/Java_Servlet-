@@ -1,5 +1,7 @@
 package com.ritesh.demo_hib;
 
+
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -38,7 +40,6 @@ public class Student {
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + ", tech=" + tech + "]";
 	}
-	
 	
 }
 

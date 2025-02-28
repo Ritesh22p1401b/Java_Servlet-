@@ -5,29 +5,27 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-/**
- * Hello world!
- *
- */
+
 public class App 
 {
     public static void main( String[] args )
     {
-    	Student s1 = new Student();
-        s1.setId(1002);
-        s1.setName("anmol");
-        s1.setTech("java_script");
+    	Student_details s2 = new Student_details();
+        s2.setRoll_no(1003);
+        s2.setName("shubham");
+        s2.setAddress("chandigarh");
+        s2.setPhone_number("7223060643");
 
 
         Configuration config = new Configuration();
-        config.addAnnotatedClass(com.ritesh.demo_hib.Student.class);
+        config.addAnnotatedClass(com.ritesh.demo_hib.Student_details.class);
         config.configure("hibernate.cfg.xml");
 
         SessionFactory factory = config.buildSessionFactory();
         Session session = factory.openSession();
         Transaction transaction = session.beginTransaction();
 
-        session.persist(s1);
+        session.persist(s2);
         transaction.commit();
     }
 }
