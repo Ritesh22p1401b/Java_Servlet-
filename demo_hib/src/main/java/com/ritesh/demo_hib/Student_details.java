@@ -36,7 +36,7 @@ public class Student_details {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public int getPhone_number() {
+	public String getPhone_number() {
 		return phone_number;
 	}
 	public void setPhone_number(String string) {

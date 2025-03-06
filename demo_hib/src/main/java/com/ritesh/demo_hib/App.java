@@ -11,8 +11,8 @@ public class App
     public static void main( String[] args )
     {
     	Student_details s2 = new Student_details();
-        s2.setRoll_no(1003);
-        s2.setName("shubham");
+        s2.setRoll_no(1005);
+        s2.setName("adarsh");
         s2.setAddress("chandigarh");
         s2.setPhone_number("7223060643");
 
