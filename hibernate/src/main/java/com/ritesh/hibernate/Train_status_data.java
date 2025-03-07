@@ -46,6 +46,7 @@ public class Train_status_data {
 	public void setSeat_availability(String seat_availability) {
 		this.seat_availability = seat_availability;
 	}
+	
 	@Override
 	public String toString() {
 		return "Train_status_data [train_number=" + train_number + ", train_depature=" + train_depature
