@@ -12,3 +12,6 @@ public class Addition implements AdditionRemote {
 		return a+b;
 	}
 }
+
+
+
