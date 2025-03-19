@@ -22,7 +22,7 @@ public class Main {
             AdditionRemote calculator = (AdditionRemote) context.lookup("java:Ejb_application/Addition!com.ritesh.AdditionRemote");
 
             System.out.println("EJB Lookup successful! Calling methods...");
-            int sum = calculator.add(10, 50);
+            int sum = calculator.add(10, 5);
             System.out.println("Addition Result: " + sum);
 
 
