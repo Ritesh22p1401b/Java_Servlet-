@@ -4,7 +4,7 @@ import jakarta.ejb.LocalBean;
 import jakarta.ejb.Stateless;
 
 
-@Stateless //(mappedName = "add")
+@Stateless 
 @LocalBean
 public class Addition implements AdditionRemote {
 	
